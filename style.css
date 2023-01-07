@@ -12,7 +12,7 @@
 
 /* CSS-reset */
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     /* font-family: 'Oswald'; */
@@ -100,15 +100,15 @@ body {
     height: 100%;
 }
 
-/* .navbar_button {
+.navbar_button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     width: 100%;
-} */
+}
 
-/* .button {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,14 +119,15 @@ body {
     border: none;
     outline: none;
     border-radius: 10px;
-    background: #23A89E;
-    color: red;
+    background: var(--accent);
+    color: var(--background);
 }
 
 .button:hover {
-    background: red;
+    background: var(--background);
+    color: var(--accent);
     transition: all 0.3s ease;
-} */
+}
 
 /* ändrar färg på knapparna när man tar musen över */
 .navbar_links:hover {    
@@ -422,7 +423,7 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
-    margin: 0 auto;
+    margin: auto;
     height: 80vh;
     background-color: #141414;
     z-index: 1;
@@ -435,7 +436,7 @@ body {
     color: var(--accent);
     font-size: 3rem;
     font-family: var(--font2);
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .article_2_p {
@@ -556,6 +557,213 @@ body {
     color: var(--accent);
 }
 
+/* Rooms */
+
+.rooms_container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+    height: 80vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px; */
+    
+  }  
+
+h1 {
+    color: var(--accent);
+    font-size: 10rem;
+    font-family: var(--font2);
+    margin-bottom: 5%;
+    /* background-color: var(--background);
+    color: var(--accent);
+    mix-blend-mode: screen;
+    position: absolute;
+    width: 120vh;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-family: var(--font2);   
+    font-size: 5rem;  */
+}
+
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+    height: 80vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.article_3{
+    /* display: block;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+    height: 200vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.article_3_h3 {
+    color: var(--accent);
+    font-size: 3rem;
+    font-family: var(--font2);
+    margin-bottom: 10%;
+}
+
+.article_3_h4 {
+    color: var(--accent);
+    font-size: 2rem;
+    font-family: var(--font2);
+    margin-bottom: 10%;
+}
+
+.article_3_p {
+    /* text-align: center; */
+    color: var(--accent);
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: var(--font2);
+    /* max-width: 60ch; */
+    line-height: 1.5em;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+/* rooms test */
+
+
+.button {
+    font-size: 16px;
+    text-transform: uppercase;
+    font: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: all 0.7 ease;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 8px 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* room */
+
+.rooms {
+    margin: 40px 0;
+}
+
+.room {
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: var(--background);
+    color: var(--accent);
+}
+
+.room-text {
+    padding: 5px 20px;
+}
+.rom-text h3 {
+    font-size: 24px;
+}
+
+.room-text ul {
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.room-text ul li {
+    padding: 7px 0;
+}
+
+.room-text ul li i {
+    color: red;
+    margin-right: 10px;
+}
+
+.rate {
+    opacity: 0.8;
+}
+
+.rate span {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--accent);
+}
+
+.room-image {
+    overflow: hidden;
+}
+
+.room-image img {
+    transition: all 0.7 ease;
+}
+
+.room-image:hover img {
+    transform: scale(1.1);
+}
+
+@media (min-width:900px) {
+    .rooms-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .room {
+        flex: 0 0 cal(50% - 20px);
+        margin: 10px;
+    }
+}
+
+@media(min-width) {
+    
+}
 
 
 
