@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- navbar section -->
+    <!-- menubar -->
     <nav class="navbar">
         <nav class="navbar_container">            
             <a href="/" id="navbar_logo"><i class="fa-solid fa-mountain-sun"></i>Twin Peaks</a>
@@ -29,46 +29,60 @@
                     <a href="rooms.html" class="navbar_links">Rooms</a>
                 </li>
                 <li class="navbar_item">
-                    <a href="contact.html" class="navbar_links">Contacts</a>
+                    <a href="contact.html" class="navbar_links">Contact</a>
                 </li>
                 <li class="navbar_button">
-                    <a href="/" class="button">Back to top</a>
-                </li> 
+                    <button onclick="topFunction()" id="myBtn">To Top</button>
+                </li>
             </ul>
         </nav>
     </nav>
-
-    <!-- hero section -->
-    <!-- <main class="main">
-        <section class="main_container">
-            <section class="main_content">
-                <h1>WILDLIFE HOTEL FOR THE ADVENTUROUS</h1>
-                <h2>Rooms from $99 to $1298 / night</h2>  
-                              
-            </section>
-            <sektion>
-                <img src="images/river.jpg" alt="" class="main_img">
-                <h2>THE HOTEL</h2>
-            </section>
-        </section>
-
-    </main> -->
 
     <!-- hero section -->
     <main class="main">
         <section class="main_container">
             <img src="images/river.jpg" alt="" class="main_img">
             <h1 class="centered_h1">WILDLIFE HOTEL FOR <br> THE ADVENTUROUS</h1>
-            <h2 class="centered_h2">Rooms from $99 to $1298 / night</h2>             
+            <!-- <h2 class="centered_h2">Rooms from $99 to $1298 / night</h2>              -->
         </section>
     </main>
 
     <article class="article_1">                              
-        <h2 class="article_1_h2">THE HOTEL</h2>        
+        <h2 class="article_1_h2">THE HOTEL</h2>
+        <h3 class="article_1_h3">Rooms from $99 to $1298 / night</h3>        
         <p class="article_1_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque. Faucibus nisl tincidunt eget nullam non nisi est sit amet. Id cursus metus aliquam eleifend mi in nulla. Convallis posuere morbi leo </p>
     </article>
 
-    <!-- image row section -->
+    <!-- room image row section -->
+    <figure class="row">
+        <figure class="column">
+            <img src="images/rum1.jpg" alt="" style="width: 100%">
+        </figure>
+        <figure class="column">
+            <img src="images/rum3.jpg" alt="" style="width: 100%">
+        </figure>
+        <figure class="column">
+            <img src="images/rum5.jpg" alt="" style="width: 100%">
+        </figure>
+        <figure class="column">
+            <img src="images/rum6.jpg" alt="" style="width: 100%">
+        </figure>
+    </figure>
+    
+   
+
+    <!-- article 2 section -->
+    <article class="article_2">
+        <section>
+            <h4 class="article_2_h4">Welcome to North Rapids County</h4>
+            <p class="article_2_p">Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Aliquam malesuada bibendum arcu vitae. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Senectus et netus et malesuada fames ac. Mauris augue neque gravida in. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. At tellus at urna condimentum. Euismod in pellentesque massa placerat duis ultricies. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. <br><br>Mauris ultrices eros in cursus turpis massa tincidunt dui. Ut faucibus pulvinar elementum integer. Lectus quam id leo in vitae turpis massa sed. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.</p>
+        </section>
+        <figure>
+            <video class="video" src="images/stream-video.mp4" width="300px" loop controls autoplay muted ></video>
+        </figure>
+    </article>
+
+     <!-- activity image row section -->
     <figure class="row">
         <figure class="column">
             <img src="images/water.jpg" alt="" style="width: 100%">
@@ -84,56 +98,8 @@
         </figure>
     </figure>
 
-    <!-- article 2 section -->
-    <article class="article_2">
-        <section>
-            <h3 class="article_2_h3">Welcome to North Rapids County</h3>
-            <p class="article_2_p">Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Aliquam malesuada bibendum arcu vitae. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Senectus et netus et malesuada fames ac. Mauris augue neque gravida in. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. At tellus at urna condimentum. Euismod in pellentesque massa placerat duis ultricies. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. <br><br>Mauris ultrices eros in cursus turpis massa tincidunt dui. Ut faucibus pulvinar elementum integer. Lectus quam id leo in vitae turpis massa sed. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.</p>
-        </section>
-        <figure>
-            <video class="video" src="images/stream-video.mp4" width="300px" loop controls autoplay muted ></video>
-        </figure>
-    </article>
-    
+    <!-- footer section -->    
     <footer class="footer_container">
-        <footer class="footer_links">
-            <!-- <footer class="footer_link-wrapper">
-                <footer class="footer_link-items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                </footer>
-                <footer class="footer_link-items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                </footer>
-            </footer>
-            <footer class="footer_link-wrapper">
-                <footer class="footer_link-items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                </footer>
-                <footer class="footer_link-items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                    <a href="/">How it works</a>
-                </footer>
-            </footer> -->
-        </footer>
         <div class="social_media">
             <div class="social_media-wrap">
                 <div class="footer_logo">
@@ -161,38 +127,8 @@
         </div> 
     </footer>
 
-
-    
-
-    <script src="app.js"></script>
-
-   
-
-    <!-- <div class="topnav">
-        <img src="images/compass.svg" alt="" width="100">
-        <p>North Rapids Hotel</p>
-        <a class="active" href="#home">Home</a>
-        <a href="#rooms.html">Rooms</a>
-        <a href="#contact.html">Contact</a>        
-    </div> 
-
-    
-
-    <br>
-    <img src="images/river.jpg" alt="" width="300">
-    <h1>WILDLIFE HOTEL FOR THE ADVENTUROUS</h1>
-    <br>
-    <br>
-    <H3>Rooms from $99 to $1298 / night</H3>
-    <br>
-    <br>
-
-    <video src="images/stream-video.mp4" width="300px" loop controls autoplay muted ></video> -->
-
-    
-    
-    
-    
+    <!-- javascript for top button and menu -->
+    <script src="app.js"></script>    
     
 </body>
 </html>
