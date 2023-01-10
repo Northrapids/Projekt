@@ -112,16 +112,13 @@ body {
     background: var(--background);
     color: var(--accent);  
     font-family: var(--font2); 
-    cursor: pointer;
-    /* transition: all 0.7s ease;         */
-    /* validerings  fel :0.7s är inte ett transition-värde : all 0.7 ease  */
+    cursor: pointer;    
 }
 
 /* to top button changes color when cursor hovers */
 #myBtn:hover{    
     color: var(--background);
     background-color: var(--accent);
-    /* transition: all 0.3s ease; */
 } 
 
 /* menubar items changes color when cursor hovers */
@@ -134,10 +131,6 @@ body {
 /* menubar end--------------------------------------------------- */
 
 /* Hero section CSS-----------------------------------------------*/
-
-/* .main {
-    background-color: var(--background);
-} */
 
  /* Container holding the image and the text */
  .main_container {
@@ -229,27 +222,19 @@ body {
 
   .article_2_h3 {
     text-align: center;
-    /* transform: translate(-50% -50%);    får validerings fel:   är en ogiltig operator : translate(-50% -50%)  */
     color: var(--accent);
     font-size: 3rem;
     font-family: var(--font2);
-    /* margin: auto; */
     margin-top: 5%;
 }
 
   .article_2{
-    /* display: block;
-    width: 80%;
-    margin: auto;
-    text-align: left;
-    padding-top: 100px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: auto;
     height: 80vh;
-    /* background-color:red; */
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -257,23 +242,18 @@ body {
 }
 
 .article_2_h4 {
-    /* text-align: center;
-    transform: translate(-50% -50%); */
     color: var(--accent);
     font-size: 2rem;
     font-family: var(--font2);
-    /* margin: auto; */
     margin-top: 20%;
     margin-bottom: 5%;
 }
 
 .article_2_p {
-    /* text-align: center; */
     color: var(--accent);
     font-size: 1.2em;
     font-weight: 300;
     font-family: var(--font2);
-    /* max-width: 60ch; */
     line-height: 1.2em;
     margin-bottom: 10%;
     margin-right: 10%;
@@ -376,7 +356,6 @@ body {
         position: absolute;
         top: -1000px;
         opacity: 0;
-        /* transition: all 0.5 ease; */
         height: 50vh;
         z-index: -1;
     }
@@ -508,7 +487,6 @@ body {
 
 .article_2_h4 {
     text-align: center;
-    /* transform: translate(-50% -50%);     */
     font-size: 1rem;
     margin-bottom: 10%;
 }
