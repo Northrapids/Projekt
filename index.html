@@ -12,31 +12,33 @@
 
 <body>
 
-    <!-- menubar -->
-    <nav class="navbar">
-        <nav class="navbar_container">            
-            <a href="/" id="navbar_logo"><i class="fa-solid fa-mountain-sun"></i>Twin Peaks</a>
-            <nav class="navbar_toggle" id="mobile-menu">
-                <nav class="bar"></nav>
-                <nav class="bar"></nav>
-                <nav class="bar"></nav>
+    <!-- header / menubar -->
+    <header>
+        <nav class="navbar">
+            <nav class="navbar_container">            
+                <a href="/" id="navbar_logo"><i class="fa-solid fa-mountain-sun"></i>Twin Peaks</a>
+                <nav class="navbar_toggle" id="mobile-menu">
+                    <nav class="bar"></nav>
+                    <nav class="bar"></nav>
+                    <nav class="bar"></nav>
+                </nav>
+                <ul class="navbar_menu">               
+                    <li class="navbar_item">
+                        <a href="index.html" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="rooms.html" class="navbar_links">Rooms</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="contact.html" class="navbar_links">Contact</a>
+                    </li>
+                    <li class="navbar_button">
+                        <button onclick="topFunction()" id="myBtn">To Top</button>
+                    </li>
+                </ul>
             </nav>
-            <ul class="navbar_menu">               
-                <li class="navbar_item">
-                    <a href="index.html" class="navbar_links">Home</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="rooms.html" class="navbar_links">Rooms</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="contact.html" class="navbar_links">Contact</a>
-                </li>
-                <li class="navbar_button">
-                    <button onclick="topFunction()" id="myBtn">To Top</button>
-                </li>
-            </ul>
         </nav>
-    </nav>
+    </header>
 
     <!-- hero section -->
     <main class="main">
@@ -78,7 +80,8 @@
             <p class="article_2_p">Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Aliquam malesuada bibendum arcu vitae. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Senectus et netus et malesuada fames ac. Mauris augue neque gravida in. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. At tellus at urna condimentum. Euismod in pellentesque massa placerat duis ultricies. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. <br><br>Mauris ultrices eros in cursus turpis massa tincidunt dui. Ut faucibus pulvinar elementum integer. Lectus quam id leo in vitae turpis massa sed. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.</p>
         </section>
         <figure>
-            <video class="video" src="images/stream-video.mp4" width="300px" loop controls autoplay muted ></video>
+            <video class="video" src="images/stream-video.mp4"  loop controls autoplay muted ></video>
+            <!-- width="300px" removed -->
         </figure>
     </article>
 
@@ -88,7 +91,7 @@
             <img src="images/water.jpg" alt="" style="width: 100%">
         </figure>
         <figure class="column">
-            <img src="images/woman canoe.jpg" alt="" style="width: 100%">
+            <img src="images/woman-canoe.jpg" alt="" style="width: 100%">
         </figure>
         <figure class="column">
             <img src="images/action.jpg" alt="" style="width: 100%">

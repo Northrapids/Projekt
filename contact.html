@@ -6,41 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon5.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a51a2dca4e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style_contacts.css">    
+    <title>Contact</title>
 </head>
 <body>
 
-    <nav class="navbar">
-        <nav class="navbar_container">            
-            <a href="/" id="navbar_logo"><i class="fa-solid fa-mountain-sun"></i>Twin Peaks</a>
-            <nav class="navbar_toggle" id="mobile-menu">
-                <nav class="bar"></nav>
-                <nav class="bar"></nav>
-                <nav class="bar"></nav>
+
+    <!-- header / menubar -->
+    <header></header>
+        <nav class="navbar">
+            <nav class="navbar_container">            
+                <a href="/" id="navbar_logo"><i class="fa-solid fa-mountain-sun"></i>Twin Peaks</a>
+                <nav class="navbar_toggle" id="mobile-menu">
+                    <nav class="bar"></nav>
+                    <nav class="bar"></nav>
+                    <nav class="bar"></nav>
+                </nav>
+                <ul class="navbar_menu">               
+                    <li class="navbar_item">
+                        <a href="index.html" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="rooms.html" class="navbar_links">Rooms</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="contact.html" class="navbar_links">Contacts</a>
+                    </li>
+                    <li class="navbar_button">
+                        <button onclick="topFunction()" id="myBtn">To Top</button>
+                    </li>
+                </ul>
             </nav>
-            <ul class="navbar_menu">               
-                <li class="navbar_item">
-                    <a href="index.html" class="navbar_links">Home</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="rooms.html" class="navbar_links">Rooms</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="contact.html" class="navbar_links">Contacts</a>
-                </li>
-                <li class="navbar_button">
-                    <a href="/" class="button">Back to top</a>
-                </li> 
-            </ul>
         </nav>
-    </nav>
+    </header>
 
+    <h1>Contacts</h1>
+
+    <div class="borderbox" id="colorMe">
+
+        <!-- contactform -->
+        <form class="contactform" autocomplete="on">    
+            <fieldset>
+                <legend>Contact our Local Experts</legend>            
+                                
+                <h3>All inquiries are answered within 12 hours</h3>
+                    
+                <div>                    
+                    <label for="fname">FIRST NAME</label>         
+                    <input type="text" name="fname" placeholder="First name" id="fname" required>
+                </div>
+
+                <div>
+                    <label for="lname">LAST NAME</label>                
+                    <input type="text" name="lname" placeholder="Last name" id="lname" required>
+                </div>
+                    
+                <div>
+                    <label for="country">COUNTRY</label>                
+                    <input type="text" name="country" placeholder="Country" id="country" required>
+                </div>
+                    
+                <div>
+                    <label for="state/province">STATE / PROVINCE</label>
+                    <input type="text" name="state/province" placeholder="State / province" id="state/province" required>
+                </div>
+                        
+                <div>
+                    <label for="email">EMAIL</label>                
+                    <input type="email" name="email" placeholder="Email" id="email" autocomplete="off" required> 
+                </div>
+                    
+                <div>
+                    <label for="phone">PHONE</label>                
+                    <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                </div>
+
+                <!-- dropdown -->
+                <label>SUBJECT</label>                
+                <select name="customer-help" id="customer-help">
+                    <option value="" disabled selected >-Select-
+                    <option value="">Booking</option>
+                    <option value="">Cancel booking</option> 
+                    <option value="">Alter booking</option>                     
+                    <option value="">Other</option>  
+                </select>
+
+                <!--message box-->
+                <div class="message-box">
+                    <label class="message-title" >MESSAGE</label> 
+                    <textarea id="message" cols="50" rows="10" placeholder="Message..."></textarea>
+                </div>
+                
+                <div class="button">
+                    <!-- Send button with thank you message when pressed -->
+                    <h2 id="text" class="thank_you">Thank You For Your Message!</h2>
+                    <button class="sendbtn" id="messagetext" type="submit" value="submit">SEND</button> 
+                </div>
+                
+            </fieldset>
+
+        </form>
+    </div>
     
+    <!-- contact info -->
+    <div>
+        <h2>Our info:</h2>
+        <h3>
+            ADDRESS: 76 Connaught, T0E 1E0, Canada
+            <br>
+            PHONE NUMBER: +1 888-832-5560
+            <br>
+            EMAIL: info@twinpeakshotel.com
+        </h3>    
+    </div>
 
-
-
-
+    <!-- footer -->
 
     <footer class="footer_container">        
         <div class="social_media">
@@ -48,7 +128,7 @@
                 <div class="footer_logo">
                     <a href="" id="footer_logo"><i class="fa-solid fa-mountain-sun"></i>Twin Peaks</a>
                 </div>
-                <p class="website_rights">&copy;2023. All rights reserved</p>
+                <p class="website_rights">© 2023. All rights reserved</p>
                 <div class="social_icons">
                     <a href="https://facebook.com/" class="social_icon-link" target="_blank">
                         <i class="fab fa-facebook"></i>
@@ -69,6 +149,9 @@
             </div>
         </div> 
     </footer>
+
+    <!-- javascript for top button, menu and hidden message -->
+    <script src="app.js"></script>
     
 </body>
 </html>

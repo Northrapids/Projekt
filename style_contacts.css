@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import "style.css";  
+
+
+:root {
+    --background: #23A89E;
+    --accent: #FADFDE;
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Lato', sans-serif;   
+}
+
+/* CSS-reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}  
+
+
+h1 {
+    padding: 80px;
+    color: var(--accent);
+    font-family: var(--font2);
+    text-align: center;    
+    font-size: 5rem;
+}
+
+h2 {
+    color: var(--accent);
+    font-family: var(--font2);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;    
+}
+
+h3 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--font2);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.borderbox {    
+    display: flex;
+    padding: 10px;
+    width: 80%;
+    margin: 1rem auto 20px auto; 
+    flex-direction: column; 
+    border: 10px solid var(--accent);    
+}
+
+fieldset {
+    border-color: var(--accent);
+    border-style: solid;    
+    color: var(--accent);
+    margin: 20px;
+}
+
+legend{
+    font-size: 2rem;
+    font-family: var(--font2);
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 30px;
+}
+
+label {
+    color: var(--accent);
+    font-family: var(--font2);
+    font-size: 1.2rem;
+    margin: 6px;
+    display: block;    
+}
+
+form {
+    text-align: center;
+    color: var(--accent);
+}
+
+#message{    
+    padding: 5px;   
+}
+
+.message-box{
+    margin: 20px;        
+}
+
+#container {
+    display: none;
+    margin: 20px;
+}
+
+/* message button */
+
+.sendbtn {
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--background);
+    background-color:var(--accent);
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.thank_you {
+    display: none;
+    color: var(--accent);
+    font-family: var(--font2);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;  
+}
+
+
+/* phone */
+@media screen and (max-width: 960px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 0.8rem;
+    }
+    
+    .border-box {    
+        display: flex;
+        padding: 10px;
+        width: 80%;
+        margin: 0.5rem auto ;
+        border: 5px solid var(--accent);    
+    }
+    
+    fieldset {
+        min-width: 90px;
+    }
+
+    legend{
+        font-size: 1.2rem;
+    }
+    
+    label {
+        font-size: 1rem;
+    }
+    
+    #message{    
+        padding: 0px;
+        width: 90%;   
+    }
+     
+    #mybtn {
+        width: 40%;
+    }
+
+}
+
+
